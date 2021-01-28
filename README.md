@@ -16,6 +16,10 @@ Properly setting up your Discord and Moodle profile.
 
 ![discord](resources_imgs/Discord.png)
 
+### Github 
+
+![github](resources_imgs/github.png)
+
 ### Do class activities
 
 Make an brief introduction of yourself in #welcome
@@ -115,7 +119,7 @@ Checking my local machine against a course profile, by running the above command
 
 Steps in Provision Workshop:
 
-Please find the steps output in the images below the code for the same can be found in the notebook uploaded in the github
+Please find the steps output in the images below the code for the same can be found in the notebook uploaded in the github in Digital Ocean Folder
 
 * 1. List Regions
 ![provision1](resources_imgs/provision1.png)
