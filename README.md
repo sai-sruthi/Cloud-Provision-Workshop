@@ -34,15 +34,7 @@ I joined the us-east-1 channel at 2:00 pm on Tuesday and discussed about the abo
 
 * [ ] Setup: Practice: Installing useful software
 
-Checking my local machine against a course profile, by running the following command:
-
-```bash|{type:'command', tty:true}
-opunit profile CSC-DevOps/profile:basics.yml
-```
-
-![opunit1](resources_imgs/opunit1.png)
-![opunit2](resources_imgs/opunit2.png)
-![opunit3](resources_imgs/opunit3.png)
+![practice](resources_imgs/practice_software.png)
 
 * [ ] Setup: Exercise: Customize your bash prompt
 
@@ -72,9 +64,86 @@ Image showing an issue in the Trello Board of Github:
 
 ![trello](resources_imgs/Trello.png)
 
+**Bonus:** Git: Complete all levels in https://learngitbranching.js.org/ 
 
+![git](resources_imgs/Learn_Git.png)
 
+![git2](resources_imgs/Learn_Git2.png)
 
+### Opunit checks 
 
+* Acheive 100% pass rate for opunit profile checks:
 
+```sh
+opunit profile CSC-DevOps/profile:519.yml
+```
 
+Checking my local machine against a course profile, by running the above command:
+
+![opunit1](resources_imgs/opunit1.png)
+![opunit2](resources_imgs/opunit2.png)
+![opunit3](resources_imgs/opunit3.png)
+
+### Answer conceptual questions
+
+* 1. Explain class philosophy of "Understand how it works"
+
+* 2. What is heredoc, and why might it be useful?
+
+* 3. Explain what does it mean by "Commits are NOT diffs"?
+
+* 4. What are signs of a bad kanban board?
+
+    A bad kanban board is when all the issues are located in a single like TO-DO and not tracked or moved properly. 
+    They are not maintained and assigned to developers etc. 
+
+* 5. Why are nightly builds useful?
+    
+    Nightly builds are useful to deploy softeares in the off peak hours and when it takes long time to function. It also happens when few users are present. 
+
+* 6. Explain "Every Feature is an Experiment"
+
+* 7. What does it mean by "Comfort the Customer with Discomfort"
+
+* 8. Explain "You are the Support Person"
+
+* 9. Why can sharing an api key be problematic?
+
+* 10. What differences did you observe between the two cloud provider apis you tried?
+
+### Complete provisioning workshop
+
+Steps in Provision Workshop:
+
+Please find the steps output in the images below the code for the same can be found in the notebook uploaded in the github
+
+* 1. List Regions
+![provision1](resources_imgs/provision1.png)
+
+* 2. List Images
+![provision2](resources_imgs/provision2.png)
+
+* 3. Create Droplet
+![provision3](resources_imgs/provision3.png)
+
+* 4. Get Droplet Information
+![provision4](resources_imgs/provision4.png)
+
+* 5. Ping 
+![provision5](resources_imgs/provision5.png)
+
+* 6. Delete Droplet
+![provision6](resources_imgs/provision6.png)
+
+* 7. Ping
+![provision7](resources_imgs/provision7.png)
+
+### Provision with additional cloud provider
+
+### Screencast 
+
+* Opunit Checks
+
+* Digital Ocean  
+
+* 
