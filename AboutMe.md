@@ -1,6 +1,6 @@
 ## About Me
 
-<img src="resources_imgs/profile_pic.jpg" width="150" height="200" />
+![img](resources_imgs/profile_pic.JPG)
 
 
 I am Sruthi Talluri, final year graduate student in Computer Science. This is my final course before graduation. 
