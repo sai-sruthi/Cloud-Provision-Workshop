@@ -1,6 +1,7 @@
 const got    = require("got");
 const chalk  = require('chalk');
 const os     = require('os');
+const { Console } = require("console");
 
 var config = {};
 // Retrieve our api token from the environment variables.
@@ -37,7 +38,7 @@ class DigitalOceanProvider
 		{
 			for( let region of response.body.regions)
 			{
-
+				Console.log(region.slug);
 			}
 		}
 
@@ -50,6 +51,13 @@ class DigitalOceanProvider
 	async listImages( )
 	{
 		// HINT: Add this to the end to get better filter results: ?type=distribution&per_page=100
+		let response = await got('https://api.digitalocean.com/v2/images/?type=distribution', { headers: headers, responseType: 'json' })
+					.catch(err => console.error(`listImages ${err}`));
+
+		if( !response ) return;
+
+		Console.log(response.body.images);
+	
 	}
 
 	async createDroplet (dropletName, region, imageName )
@@ -110,9 +118,10 @@ class DigitalOceanProvider
 		if( response.body.droplet )
 		{
 			let droplet = response.body.droplet;
-			//console.log(droplet);
+			console.log(droplet.networks);
 
 			// Print out IP address
+			console.log(response.body.droplet.networks.v4[1].ip_address);
 		}
 
 	}
@@ -126,6 +135,12 @@ class DigitalOceanProvider
 		}
 
 		// HINT, use the DELETE verb.
+		let response = await got.delete(`https://api.digitalocean.com/v2/droplets/${id}`, 
+		{
+			headers:headers
+		}).catch( err => 
+			console.error(chalk.red(`deleteDroplet: ${err}`)) 
+		);
 
 		if( !response ) return;
 
@@ -163,14 +178,14 @@ async function provision()
 	// #############################################
 	// #3 Create an droplet with the specified name, region, and image
 	// Comment out when completed. ONLY RUN ONCE!!!!!
-	// var name = "UnityId"+os.hostname();
-	// var region = ""; // Fill one in from #1
-	// var image = ""; // Fill one in from #2
+	var name = "stallur2"+os.hostname();
+	var region = "nyc3"; // Fill one in from #1
+	var image = "debian-10-x64"; // Fill one in from #2
 	// await client.createDroplet(name, region, image);
 
 	// Record the droplet id that you see print out in a variable.
 	// We will use this to interact with our droplet for the next steps.
-	//var dropletId = ;
+	var dropletId = "228821716";
 
 	// !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 	// BEFORE MOVING TO STEP FOR, REMEMBER TO COMMENT OUT THE `createDroplet()` call!!!
@@ -185,7 +200,7 @@ async function provision()
 	
 	// #############################################
 	// #5 In the command line, ping your server, make sure it is alive!
-	// ping xx.xx.xx.xx
+	// ping 164.90.138.232
 
 	// #############################################
 	// #6 Extend the client to DESTROY the specified droplet.
@@ -194,7 +209,7 @@ async function provision()
 
 	// #############################################
 	// #7 In the command line, ping your server, make sure it is dead!
-	// ping xx.xx.xx.xx
+	// ping 164.90.138.232
 }
 
 
