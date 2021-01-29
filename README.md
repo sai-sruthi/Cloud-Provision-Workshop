@@ -94,10 +94,14 @@ Checking my local machine against a course profile, by running the above command
 
 * 2. What is heredoc, and why might it be useful?
 
+    When writing shell scripts you may be in a situation where you need to pass a multiline block of text or code to an interactive command, such as tee , cat, or sftp .
+    In Bash and other shells like Zsh, a Here document (Heredoc) is a type of redirection that allows you to pass multiple lines of input to a command.
+
 * 3. Explain what does it mean by "Commits are NOT diffs"?
 
-    It is said that Commits are snapshots, not diffs because, 
-    
+    It is said that Commits are snapshots, not diffs because, it is a snapshot in time. Each Commits contains metadata describing the snapshot such as author and committer (including name, email address, and date) and a commit message. 
+    The diff is dynamically generated from the snapshot data by comparing the root trees of the commit and its parent. Git can compare any two snapshots in time.
+
 * 4. What are signs of a bad kanban board?
 
     A bad kanban board is when all the issues are located in a single like TO-DO and not tracked or moved properly. 
@@ -113,11 +117,15 @@ Checking my local machine against a course profile, by running the above command
 
 * 7. What does it mean by "Comfort the Customer with Discomfort"
 
+
+
 * 8. Explain "You are the Support Person"
 
     Working in DevOps we consider ourselves to be the support person too, we have to take responsibility to provide continous support as we have to deliver and deploy contonously unlike old times. We will not have people for testing, then deploying etc..
 
 * 9. Why can sharing an api key be problematic?
+
+    Sharing an api key is problematic because other people ca piggyback on the resources that we have access to, because we will be paying for it most of the time. Also sometimes if the API key authenticates someone for access to a subset of data, then it will give them access to data.
 
 * 10. What differences did you observe between the two cloud provider apis you tried?
 
@@ -154,10 +162,10 @@ Please find the steps output in the images below the code for the same can be fo
 
 * Opunit Checks
 
-[Opunit Checks Demo](https://drive.google.com/file/d/1bjUq6J4_a4EGDmCkw8iQLxGm2dVY2ILl/view?usp=sharing)
+    [Opunit Checks Demo](https://drive.google.com/file/d/1bjUq6J4_a4EGDmCkw8iQLxGm2dVY2ILl/view?usp=sharing)
 
 * Digital Ocean  
 
-[Digital Ocean Demo](https://drive.google.com/file/d/1UrYF-sdN1gePSvWe7_U2lv4ZHVEaEu4H/view?usp=sharing)
+    [Digital Ocean Demo](https://drive.google.com/file/d/1UrYF-sdN1gePSvWe7_U2lv4ZHVEaEu4H/view?usp=sharing)
 
 * 
