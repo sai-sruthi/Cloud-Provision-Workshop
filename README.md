@@ -96,6 +96,7 @@ Checking my local machine against a course profile, by running the above command
 
 * 3. Explain what does it mean by "Commits are NOT diffs"?
 
+    It is said that Commits are snapshots, not diffs because, 
 * 4. What are signs of a bad kanban board?
 
     A bad kanban board is when all the issues are located in a single like TO-DO and not tracked or moved properly. 
@@ -107,9 +108,13 @@ Checking my local machine against a course profile, by running the above command
 
 * 6. Explain "Every Feature is an Experiment"
 
+    Every feature is an experiment in todays world since a lot of percentage of features develop do not make to the end user. As mentioned in the lectures many companies are following slow to release was where they deploy a feature and only tell their customers after they see how the users are responding to it, hence it is like an experiment. 
+
 * 7. What does it mean by "Comfort the Customer with Discomfort"
 
 * 8. Explain "You are the Support Person"
+
+    Working in DevOps we consider ourselves to be the support person too, we have to take responsibility to provide continous support as we have to deliver and deploy contonously unlike old times. We will not have people for testing, then deploying etc..
 
 * 9. Why can sharing an api key be problematic?
 
@@ -148,6 +153,9 @@ Please find the steps output in the images below the code for the same can be fo
 
 * Opunit Checks
 
+
 * Digital Ocean  
+
+[Digital Ocean Demo] (https://drive.google.com/file/d/1UrYF-sdN1gePSvWe7_U2lv4ZHVEaEu4H/view?usp=sharing)
 
 * 

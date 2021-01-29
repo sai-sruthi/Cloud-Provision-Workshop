@@ -187,7 +187,7 @@ async function provision()
 
 	// Record the droplet id that you see print out in a variable.
 	// We will use this to interact with our droplet for the next steps.
-	var dropletId = 228892141;
+	var dropletId = 228895034;
 
 	// !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 	// BEFORE MOVING TO STEP FOR, REMEMBER TO COMMENT OUT THE `createDroplet()` call!!!
