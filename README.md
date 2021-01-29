@@ -137,7 +137,7 @@ Checking my local machine against a course profile, by running the above command
 
 Steps in Provision Workshop:
 
-Please find the steps output in the images below. <br> The code and Workshop.md file to describe for the same can be found in the notebook uploaded in the github in Digital Ocean Folder
+Please find the steps output in the images below. <br> The code and README.md file to describe for the same can be found in the notebook uploaded in the github in Digital Ocean Folder
 
 * 1. List Regions
 ![provision1](resources_imgs/provision1.png)
@@ -162,7 +162,7 @@ Please find the steps output in the images below. <br> The code and Workshop.md 
 
 ### Provision with additional cloud provider
 
-Please find the steps output in the images below. <br> The code and Workshop.md file to describe for the same can be found in the notebook uploaded in the github in AWS Folder
+Please find the steps output in the images below. <br> The code and README.md file to describe for the same can be found in the notebook uploaded in the github in AWS Folder
 
 * 1. Create Instance
 
