@@ -38,7 +38,7 @@ class DigitalOceanProvider
 		{
 			for( let region of response.body.regions)
 			{
-				Console.log(region.slug);
+				console.log(region.slug);
 			}
 		}
 
@@ -56,7 +56,7 @@ class DigitalOceanProvider
 
 		if( !response ) return;
 
-		Console.log(response.body.images);
+		console.log(response.body.images);
 	
 	}
 
@@ -72,7 +72,7 @@ class DigitalOceanProvider
 		{
 			"name": dropletName,
 			"region":region,
-			"size":"512mb",
+			"size":"s-1vcpu-1gb",
 			"image":imageName,
 			"ssh_keys":null,
 			"backups":false,
@@ -94,11 +94,12 @@ class DigitalOceanProvider
 		if( !response ) return;
 
 		console.log(response.statusCode);
-		console.log(response.body);
+		let droplet = JSON.parse( response.body ).droplet;
+		console.log(droplet);
 
 		if(response.statusCode == 202)
 		{
-			console.log(chalk.green(`Created droplet id ${response.body.droplet.id}`));
+			console.log(chalk.green(`Created droplet id ${droplet.id}`));
 		}
 	}
 
@@ -111,7 +112,8 @@ class DigitalOceanProvider
 		}
 
 		// Make REST request
-		let response = await this.makeRequest(`https://api.digitalocean.com/v2/droplets/${id}`)
+		let response = await got(`https://api.digitalocean.com/v2/droplets/${id}`, { headers: headers, responseType: 'json' })
+		.catch(err => console.error(`listImages ${err}`));
 
 		if( !response ) return;
 
@@ -121,7 +123,7 @@ class DigitalOceanProvider
 			console.log(droplet.networks);
 
 			// Print out IP address
-			console.log(response.body.droplet.networks.v4[1].ip_address);
+			console.log("IP Address : "+response.body.droplet.networks.v4[1].ip_address);
 		}
 
 	}
@@ -165,7 +167,7 @@ async function provision()
 	// Comment out when completed.
 	// https://developers.digitalocean.com/documentation/v2/#list-all-regions
 	// use 'slug' property
-	await client.listRegions();
+	// await client.listRegions();
 
 	// #############################################
 	// #2 Extend the client object to have a listImages method
@@ -178,14 +180,14 @@ async function provision()
 	// #############################################
 	// #3 Create an droplet with the specified name, region, and image
 	// Comment out when completed. ONLY RUN ONCE!!!!!
-	var name = "stallur2"+os.hostname();
+	var name = "stallur2";
 	var region = "nyc3"; // Fill one in from #1
 	var image = "debian-10-x64"; // Fill one in from #2
 	// await client.createDroplet(name, region, image);
 
 	// Record the droplet id that you see print out in a variable.
 	// We will use this to interact with our droplet for the next steps.
-	var dropletId = "228821716";
+	var dropletId = 228892141;
 
 	// !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 	// BEFORE MOVING TO STEP FOR, REMEMBER TO COMMENT OUT THE `createDroplet()` call!!!
