@@ -92,6 +92,8 @@ Checking my local machine against a course profile, by running the above command
 
 * 1. Explain class philosophy of "Understand how it works"
 
+    Initally the developers and operations were different parts and one did not understand how the other works but it was needed and important to understand how it works to find better solutions. If we do not understand how it works we will not be able to fix the errors or problems and create dependencies everywhere.
+
 * 2. What is heredoc, and why might it be useful?
 
     When writing shell scripts you may be in a situation where you need to pass a multiline block of text or code to an interactive command, such as tee , cat, or sftp .
@@ -117,7 +119,7 @@ Checking my local machine against a course profile, by running the above command
 
 * 7. What does it mean by "Comfort the Customer with Discomfort"
 
-
+   "Comfort the Customer with Discomfort" means to provide the customers with features initally and later remove them if it is not received well, so making every feature an experiment we are first seeing if the cutomer likes it or not, hence we may create a discomfort for the customer only to release the best features for their comfort. 
 
 * 8. Explain "You are the Support Person"
 
@@ -129,11 +131,13 @@ Checking my local machine against a course profile, by running the above command
 
 * 10. What differences did you observe between the two cloud provider apis you tried?
 
+    The difference between the two key providers is that in AWS EC2 the rest api create call needed few different parameters and the, but hd multiple options of images. The Digital Ocean had limited set of images. 
+
 ### Complete provisioning workshop
 
 Steps in Provision Workshop:
 
-Please find the steps output in the images below the code for the same can be found in the notebook uploaded in the github in Digital Ocean Folder
+Please find the steps output in the images below. <br> The code and Workshop.md file to describe for the same can be found in the notebook uploaded in the github in Digital Ocean Folder
 
 * 1. List Regions
 ![provision1](resources_imgs/provision1.png)
@@ -158,6 +162,14 @@ Please find the steps output in the images below the code for the same can be fo
 
 ### Provision with additional cloud provider
 
+Please find the steps output in the images below. <br> The code and Workshop.md file to describe for the same can be found in the notebook uploaded in the github in AWS Folder
+
+* 1. Create Instance
+![aws1](resources_imgs/createAWS.png)
+
+* 2. Get Instance Information
+![aws2](resources_imgs/describeAWS.png)
+
 ### Screencast 
 
 * Opunit Checks
@@ -168,4 +180,5 @@ Please find the steps output in the images below the code for the same can be fo
 
     [Digital Ocean Demo](https://drive.google.com/file/d/1UrYF-sdN1gePSvWe7_U2lv4ZHVEaEu4H/view?usp=sharing)
 
-* 
+* AWS 
+    [AWS Demo](https://drive.google.com/file/d/1msZ9aAiwYuzhoQ7uNR52-69-kSuoabak/view?usp=sharing)
