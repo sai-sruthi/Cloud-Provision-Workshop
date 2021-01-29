@@ -165,9 +165,11 @@ Please find the steps output in the images below. <br> The code and Workshop.md 
 Please find the steps output in the images below. <br> The code and Workshop.md file to describe for the same can be found in the notebook uploaded in the github in AWS Folder
 
 * 1. Create Instance
+
 ![aws1](resources_imgs/createAWS.png)
 
 * 2. Get Instance Information
+
 ![aws2](resources_imgs/describeAWS.png)
 
 ### Screencast 
@@ -181,4 +183,5 @@ Please find the steps output in the images below. <br> The code and Workshop.md 
     [Digital Ocean Demo](https://drive.google.com/file/d/1UrYF-sdN1gePSvWe7_U2lv4ZHVEaEu4H/view?usp=sharing)
 
 * AWS 
+    
     [AWS Demo](https://drive.google.com/file/d/1msZ9aAiwYuzhoQ7uNR52-69-kSuoabak/view?usp=sharing)
