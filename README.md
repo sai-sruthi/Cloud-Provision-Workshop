@@ -97,6 +97,7 @@ Checking my local machine against a course profile, by running the above command
 * 3. Explain what does it mean by "Commits are NOT diffs"?
 
     It is said that Commits are snapshots, not diffs because, 
+    
 * 4. What are signs of a bad kanban board?
 
     A bad kanban board is when all the issues are located in a single like TO-DO and not tracked or moved properly. 
@@ -153,9 +154,10 @@ Please find the steps output in the images below the code for the same can be fo
 
 * Opunit Checks
 
+[Opunit Checks Demo](https://drive.google.com/file/d/1bjUq6J4_a4EGDmCkw8iQLxGm2dVY2ILl/view?usp=sharing)
 
 * Digital Ocean  
 
-[Digital Ocean Demo] (https://drive.google.com/file/d/1UrYF-sdN1gePSvWe7_U2lv4ZHVEaEu4H/view?usp=sharing)
+[Digital Ocean Demo](https://drive.google.com/file/d/1UrYF-sdN1gePSvWe7_U2lv4ZHVEaEu4H/view?usp=sharing)
 
 * 
