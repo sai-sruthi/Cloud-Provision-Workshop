@@ -1,6 +1,6 @@
-# HW0-DevOps
+# Cloud Provision Workshop
 
-**Unity Id:** stallur2
+Solution for: https://github.com/CSC-DevOps/Course/blob/master/HW/HW0-Z.md
 
 **Name:** Sruthi Talluri 
 
